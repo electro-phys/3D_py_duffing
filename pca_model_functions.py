@@ -193,7 +193,7 @@ class ODEFunc(nn.Module):
     def forward(self, t, y):
         return self.net(y)
 
-def neural_ode_pca(pca_data, epochs=1000, lr=0.01):
+def neural_ode_pca(pca_data, epochs=500, lr=0.01):
     # Convert PCA data to PyTorch tensors
     pca_data = torch.tensor(pca_data, dtype=torch.float32)
 
