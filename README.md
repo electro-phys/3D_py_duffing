@@ -8,9 +8,5 @@ This is a python version based on the 3D duffing repo from victormeloasm at http
 ## Neural ODEs
 This uses a neural network to solve. This requires torch to work as we are training an NN, but shouldn't be too costly and also utilizes the torchdiffeq package for solving: https://github.com/electro-phys/torchdiffeq
 
-## Phase Plane
-Pick a model, then pick 2D or 3D, for 2D you need to select which combination of PCs you want to visualize.
-
-### 2D
-
-### 3D
+### Vector Field
+This uses the output of the neural ODE, howeverm you can specify any equation that you want, but this requiries manually adding it to the code.
